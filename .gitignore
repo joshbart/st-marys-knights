@@ -13,9 +13,3 @@
 *.box
 
 # End of https://www.gitignore.io/api/vagrant
-
-
-# Manual additions
-
-### FTP ###
-.netrc

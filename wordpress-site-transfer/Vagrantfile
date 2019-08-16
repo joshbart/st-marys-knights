@@ -1,7 +1,0 @@
-Vagrant.configure("2") do |config|
-  config.vm.box = "ubuntu/bionic64"
-  config.vm.provision "shell", inline: "cp /vagrant/.netrc /home/vagrant/.netrc"
-  config.vm.provision "shell", inline: "chown vagrant:vagrant /home/vagrant/.netrc"
-  config.vm.provision "shell", inline: "chmod 600 /home/vagrant/.netrc"
-  config.vm.provision "shell", inline: "ftp irwin.dreamhost.com"
-end
